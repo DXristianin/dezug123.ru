@@ -1,8 +1,8 @@
 {
-    "name": "kholobok.biz",
+    "name": "kontinent46.ru",
     "version": "0.1.0",
-    "description": "Video host, fron of kholobok.biz",
-    "author": "Shavyrin Igor <des-star@ibox.ru>",
+    "description": "kontinent46.ru",
+    "author": "David Garyaev <dxristianin@gmail.com>",
     "main": "index.js",
     "scripts": {
         "dev_src": "webpack-dev-server --mode development",
