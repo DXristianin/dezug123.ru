@@ -4,9 +4,9 @@ const publicPath = '/kholobok-biz/';
 
 module.exports = () => ({
   devServer: {
-    host: '0.0.0.0',
+    host: 'localhost',
     disableHostCheck: true,
-    port: 8040,
+    port: 8080,
     open: true,
     historyApiFallback: {
       index: url.parse(publicPath).pathname,
