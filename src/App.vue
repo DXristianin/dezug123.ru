@@ -1,12 +1,11 @@
 <template>
   <div id="app">
 
-
     <div class="section1">
       <div class="header">
         <div class="content">
           <p>
-            Дезинфекция-Анапа
+            Дезинфекция
           </p>
           <p>
             <b><a href="tel:+7(918)-663-77-93">+7(918)-663-77-93</a></b>
@@ -14,7 +13,7 @@
         </div>
       </div>
       <div class="content">
-      <h1><span>Уничтожение насекомых</span> в Анапе.</h1>
+      <h1><span>Уничтожение насекомых</span> по России.</h1>
       <h2>Выезд мастера <span>бесплатно</span></h2>
       <a href="tel:+7(918)-663-77-93" class="button b1">Вызвать мастера</a>
       </div>
@@ -22,39 +21,73 @@
 
     <div class="section2">
       <div class="content">
-        <h2>Мы уничтожаем</h2>
         <el-row :gutter="40">
-          <el-col :md="8" :sm="12">
+          <el-col :md="6" :sm="12">
 
             <div class="card">
               <div class="grid-content bg-purple">
                 <div class="img">
-                <img :src="require('~/assets/images/z1.png')" alt="Ballon" width="200px">
+                <img :src="require('~/assets/images/dez1.png')" alt="Ballon" width="400px" style="padding-bottom:15px">
                 </div>
-                <h2>Клещей</h2>
+                <h2>ДЕЗИНСЕКЦИЯ</h2>
+                <p class="dez_description">
+                  - уничтожение клопов<br>
+                  - уничтожение тараканов<br>
+                  - уничтожение клещей<br>
+                  - уничтожение блох<br>
+                  - уничтожение муравьев<br>
+                  - уничтожение комаров<br>
+                  А также мух, слепней, ос, пчел, короеда, мокриц, шершней, огневки, шершней.
+                </p>
+              </div>
+            </div> 
+      </el-col>
+            <el-col :md="6" :sm="12">
+
+            <div class="card">
+              <div class="grid-content bg-purple">
+                <div class="img">
+                <img :src="require('~/assets/images/dez2.png')" alt="Ballon" width="400px" style="padding-bottom:15px">
+                </div>
+                <h2>ДЕРАТИЗАЦИЯ</h2>
+                <p class="dez_description">
+                  - уничтожение крыс<br>
+                  - уничтожение мышей<br>
+                  - уничтожение кротов
+                </p>
               </div>
             </div> 
 
+
           </el-col>
-          <el-col :md="8" :sm="12">
+          <el-col :md="6" :sm="12">
 
            <div class="card">
               <div class="grid-content bg-purple">
                 <div class="img">
-                <img :src="require('~/assets/images/z3.png')" alt="Ballon" width="220px" style="position:relative;top:-45px;margin-bottom:-40px;">
+                <img :src="require('~/assets/images/dez3.png')" alt="Ballon" width="400px" style="padding-bottom:15px">
                 </div>
-                <h2>Тараканов</h2>
+                <h2>ДЕЗОДОРАЦИЯ</h2>
+                <p class="dez_description">
+                  Дезодорация квартиры, склада, офиса, дома требуется в тех случаях, когда качество воздуха не позволяет использовать помещение по назначению, комфортно находиться внутри.
+                </p>
               </div>
             </div> 
           </el-col>
-          <el-col :md="8" :sm="12">
+          <el-col :md="6" :sm="12">
 
             <div class="card">
               <div class="grid-content bg-purple">
                 <div class="img">
-                <img :src="require('~/assets/images/z2.png')" alt="Ballon" width="200px">
+                <img :src="require('~/assets/images/dez4.png')" alt="Ballon" width="400px" style="padding-bottom:15px">
                 </div>
-                <h2>Муравьёв</h2>
+                <h2>ДЕЗИНФЕКЦИЯ</h2>
+                <p class="dez_description">
+                  - уничтожение бактерий <br>
+                  - уничтожение плесени <br>
+                  - Обработка помещений от COVID-19 <br>
+                  И других вирусов
+                </p>
               </div>
             </div> 
           </el-col>
@@ -107,12 +140,27 @@
       </div>
     </div>
 
+    <div class="section5">
+      <div class="content">
+        <h2>
+          Социальная скидка
+        </h2>
+        <br>
+        <p>
+          Мы предоставляем скидки пенсионерам, инвалидам, многодетным семьям<br>
+          Бесплатный вызов мастера
+        </p>
+        <br>
+        <a href="tel:+7(918)-663-77-93" class="button b1">Свяжитесь с нами для получения подробной информации</a>
+      </div>
+    </div>
+
     <div class="section3">
       <div class="content">
         <el-row :gutter="140">
           <el-col :md="12">
             <div class="grid-content bg-purple">
-              <h2>Dez-Anapa - доверь дело профессионалам!</h2>
+              <h2>DezUg - доверь дело профессионалам!</h2>
               <p>
               В сферу деятельности нашей организации входит - уничтожение насекомых и грызунов относящихся к группе вредителей, 
               а также услуги по дезинфекции (уничтожение вирусов и бактерий, плесени) и дезодорации (устранение неприятных запахов), 
@@ -304,11 +352,11 @@
   .section2 {
     overflow: hidden;
     background: #f3f3f3;
-    padding: 80px 10px;
+    padding: 0px 00px;
 
 
     .el-row {
-      padding-top: 70px
+      padding: 40px 0 20px 0;
     }
     .card{
       padding: 20px 0;
@@ -317,6 +365,12 @@
         font-size: 28px;
         font-family: 'Montserrat-Light';
       }
+      .dez_description {
+        padding-top: 10px;
+      }
+       img {
+    margin-left: -70px;
+  }
     }
 
     .grid-content {
@@ -376,6 +430,14 @@
     .section1 .content {
       padding: 0 0px 0 20px;
     }
+  .dez_description {
+    padding: 0 15px;
+  }
+
+    img {
+      margin-left: -10px !important;
+    };
+
   }
 
   .section4 {
@@ -396,5 +458,21 @@
     background: black;
     color: white;
     padding: 12px 0px;
+  
+  
   }
+
+  .section5 {
+    background: orange;
+    color: white;
+
+    a {
+      
+    }
+  }
+  .section5 .content {
+    padding: 70px 0px;
+    text-align: center;
+  }
+ 
 </style>
